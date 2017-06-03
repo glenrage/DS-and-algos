@@ -36,7 +36,7 @@ describe('BST from Array test', function() {
   });
 });
 
-describe('BST min, max and find methods', function() {
+describe('BST min, max, find, contains methods', function() {
 
   const testBst = new BST.BST();
   testBst.insertNode(1);
@@ -60,5 +60,8 @@ describe('BST min, max and find methods', function() {
     expect(find.data).to.equal(3);
   });
 
-
+  it('should return true if it contains a value', () => {
+    var contained = testBst.contains(4);
+    expect(contained).to.equal(true);
+  });
 });
