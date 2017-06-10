@@ -15,7 +15,6 @@ describe('BST insert node ', function() {
   it('should insert a node', () => {
     const testBst = new BST.BST();
     testBst.insertNode(4);
-    console.log(testBst);
     expect(testBst).to.be.an.instanceOf(Object);
     expect(testBst.root.data).to.equal(4);
     expect(testBst.root.left).to.equal(null);
@@ -26,7 +25,6 @@ describe('BST insert node ', function() {
 describe('BST from Array test', function() {
   it('should create a new Binary Seach Tree from an Array', () => {
     const testBst = new BST.bstFromArray(testArray);
-    console.log(testBst);
     expect(testBst).to.be.an.instanceOf(Object);
     expect(testBst.data).to.equal(5);
     expect(testBst.left.data).to.equal(2);
@@ -43,7 +41,6 @@ describe('BST min, max, find, contains methods', function() {
   testBst.insertNode(2);
   testBst.insertNode(3);
   testBst.insertNode(4);
-  console.log(testBst);
 
   it('should find min value', () => {
     var min = testBst.min();
