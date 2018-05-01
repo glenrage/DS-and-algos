@@ -17,9 +17,9 @@ function capitalize(str) {
   return words.join(' ')
 }
 
-// function capitalize(str) {
-//
-// }
+function capitalize(str) {
+
+}
 
 
 module.exports = capitalize;
