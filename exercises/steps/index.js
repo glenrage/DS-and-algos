@@ -17,21 +17,20 @@
 //       '### '
 //       '####'
 
+//first for loop to iterate length
+//check
+
 function steps(n) {
-  let string = '';
-
-  for(let row = 0; row < n; row++){
-
-
-    for(let column = 0; column < n; column++){
-      if(column <= row) {
-        string +='#';
+  for (var row = 0; row < n; row++) {
+    let result = '';
+    for (var column = 0; column < n; column++) {
+      if (column <= row) {
+        result += '#';
+      } else {
+        result += ' ';
       }
-
-    }else {
-      string += ' ';
     }
-    console.log(string)
+    console.log(result);
   }
 }
 
