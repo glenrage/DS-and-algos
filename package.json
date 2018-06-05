@@ -24,6 +24,7 @@
     "mocha": "^3.3.0"
   },
   "dependencies": {
+    "prettier": "^1.12.1",
     "viz": "0.0.1",
     "viz.js": "^1.8.0"
   }
